@@ -1,5 +1,7 @@
 # Designing a Data Warehouse
 
+
+
 Kimball Dimensional Modeling Techniques
 > Replace Entity with Event Who was involved, What happened, When did it happen, hoW will itbe measured, Where fid it happem, hoW many were affected
 
@@ -47,3 +49,13 @@ When triaging operational source data, it is sometimes unclear whether a numeric
 # The  ETL
 The primary mission of the ETL system is to hand off the dimension and fact tables in the delivery step, these subsystems are critical. Many of these defined subsystems focus on dimension table processing, such as surrogate key assignments, code lookups to provide appropriate descriptions, splitting, or combining columns to present the appropriate data values, or joining underlying third normal form table structures into flattened denormalized dimensions. In contrast, fact tables are typically large and time consuming to load, but preparing them for the presentation area is typically straightforward.
 
+
+
+> Dimensional Modelstorming Tools
+ ✲  Data stories, themes and BEAM✲ tables: modeling BI data requirements by example
+ ✲  Timelines: modeling time and process measurement
+ ✲  Hierarchy charts: modeling dimensional drill-downs and rollups
+ ✲  Change stories: capturing historical reporting requirements (slowly changing dimension rules)
+ ✲  Storyboarding the data warehouse design: matrix planning and estimating for agile BI development
+ ✲  The Business Model Canvas: aligning DW/BI design with business model definition and innovation
+ ✲  The BI Model Canvas: a systematic approach to BI & star schema design
