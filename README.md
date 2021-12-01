@@ -3,6 +3,7 @@
 Kimball Dimensional Modeling Techniques
 
 The idea that a measurement event in the physical world has a one-to-one relationship to a **single row** in the corresponding fact table is a bedrock principle for dimensional modeling. Everything else builds from this foundation.
+Source systems maintain little historical data; a good data warehouse can relieve the source systems of much of the responsibility for representing the past.
 
 You will see that facts are sometimes semi-additive or even non-additive.
 - Semi-additive facts, such as account balances, cannot be summed across the time dimension.
@@ -19,6 +20,7 @@ You will see that facts are sometimes semi-additive or even non-additive.
  - Dimension tables tend to have fewer rows than fact tables, but can be wide with many large text columns. 
  - Each dimension is defined by a single primary key , which serves as the basis for referential integrity with any given fact table to which it is joined.
  - Dimension attributes serve as the primary source of query constraints, groupings, and report labels.
+ - Dimension tables often represent hierarchical relationships. For example, products roll up into brands and then into categories. For each row in the product dimension, you should store the associated brand and category description. The hierarchical descriptive information is stored redundantly in the spirit of ease of use and query performance.
 
 #### Ambiguities
 When triaging operational source data, it is sometimes unclear whether a numeric data element is a fact or dimension attribute. You often make the decision by asking whether the column is a measurement that takes on lots of values and participates in calculations (making it a fact) or is a discretely valued description that is more or less constant and participates in constraints and row labels (making it a dimensional attribute). 
