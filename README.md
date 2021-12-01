@@ -2,12 +2,15 @@
 
 Kimball Dimensional Modeling Techniques
 
-Enterprise perspective: leveraging conformed dimensions for enterprise consistency and integration.
-ETL will be done once and will the source fo truth for decision making.
-A common ground has to be cleared and prepared for everyone to be making decisions based on the same set of facts.
-The data source has to be backed by integrity.
-Data must be current and must arrive in a timely fashion.
-Dimensional models should not be designed by focusing on predefined reports or analyses; the design should center on measurement processes. The key is to focus on the organization's measurement events that are typically stable, unlike analyses that are constantly evolving.
+> Business Structure and Business Process: Businesss Event Analysis ans modeling
+
+- Enterprise perspective: leveraging conformed dimensions for enterprise consistency and integration. Conformed dimensions are built and maintained as centralized, persistent master data in the ETL system and then reused across dimensional models to enable data integration and ensure semantic consistency. 
+- ETL will be done once and will the source fo truth for decision making.
+- A common ground has to be cleared and prepared for everyone to be making decisions based on the same set of facts.
+- The data source has to be backed by integrity.
+- Data must be current and must arrive in a timely fashion.
+- Dimensional models should not be designed by focusing on predefined reports or analyses; the design should center on measurement processes. The key is to focus on the organization's measurement events that are typically stable, unlike analyses that are constantly evolving.
+- When specifying the project's scope, you must stand firm to focus on a single business process per project and not sign up to deploy a dashboard that covers a handful of them in a single iteration.
 
 
 
