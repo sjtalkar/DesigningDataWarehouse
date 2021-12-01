@@ -2,7 +2,11 @@
 
 Kimball Dimensional Modeling Techniques
 > Replace Entity with Event Who was involved, What happened, When did it happen, hoW will itbe measured, Where fid it happem, hoW many were affected
+
 > Business Structure and Business Process: Businesss Event Analysis and Modeling. 7W Who,What When, Where, Why, How many , How
+
+> Modeling each business  process as a Star Schema supports incrementa development, design and usage
+
 
 - Enterprise perspective: leveraging conformed dimensions for enterprise consistency and integration. Conformed dimensions are built and maintained as centralized, persistent master data in the ETL system and then reused across dimensional models to enable data integration and ensure semantic consistency. 
 - ETL will be done once and will the source fo truth for decision making.
